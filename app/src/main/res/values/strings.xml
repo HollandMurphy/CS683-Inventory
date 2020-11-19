@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <string-array name="type">
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+    <string name="fetch_inv">Fetch Inventory</string>
+    <string name="app_logo">App Logo</string>
+</resources>
