@@ -40,6 +40,7 @@ public class displayPage extends AppCompatActivity {
                 if (position == 0) {
                     Log.i(TAG, "Position Clicked: " + position);
                     Intent intent = new Intent(displayPage.this, DetailActivity.class);
+                    intent.putExtra(DetailActivity.POSITION_ID,(int)position);
                     startActivity(intent);
                 }
             }
