@@ -26,5 +26,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Unit: xyz"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/inv_sold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Sold"
+            />
+
+        <RadioButton android:id="@+id/inv_lot"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Lot"
+            />
+
+        <RadioButton android:id="@+id/inv_test_drive"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="BCA"
+            />
+        <RadioButton
+            android:id="@+id/inv_unaccounted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lost"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/sub_inv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+
 <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
 </LinearLayout>

@@ -36,13 +36,10 @@ public class displayPage extends AppCompatActivity {
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> listView, View itemView, int position, long id) {
-                Log.i(TAG, "Wondering: " + position);
-                if (position == 0) {
                     Log.i(TAG, "Position Clicked: " + position);
                     Intent intent = new Intent(displayPage.this, DetailActivity.class);
                     intent.putExtra(DetailActivity.POSITION_ID,(int)position);
                     startActivity(intent);
-                }
             }
         };
         // Add listener to the list view

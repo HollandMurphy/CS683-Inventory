@@ -34,12 +34,11 @@ public class MainActivity extends AppCompatActivity {
             {
                 Spinner spinner = (Spinner) findViewById(R.id.inventory_type);
                 String text = spinner.getSelectedItem().toString();
-                Log.i(TAG, "Spinner Text: " + text);
+
 
                 if (text.equals("New")) {
                     Log.i(TAG, "Made it: " + text);
                     Intent intent = new Intent(MainActivity.this, displayPage.class);
-                    Log.i(TAG, "Wondering: " + text);
                     startActivity(intent);
                 }
 
